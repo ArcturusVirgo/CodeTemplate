@@ -35,17 +35,21 @@ function IntelOneapiVars {
 function ProxyGitSet {
     git config --global http.proxy http://127.0.0.1:20172
     git config --global https.proxy https://127.0.0.1:20172
+    echo "git proxy has been setted."
 }
 
 function ProxyGitUnset {
     git config --global --unset http.proxy
     git config --global --unset https.proxy
+    echo "git proxy has been unsetted."
 }
 
 function ProxyScoopSet {
     scoop config proxy 127.0.0.1:20172
+    echo "scoop proxy has been setted."
 }
 
 function ProxyScoopUnset {
     scoop config rm proxy
+    echo "scoop proxy has been unsetted."
 }
